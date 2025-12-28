@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Flexbox guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container flex-between">
+        <div class="logo">
+          <i class="fa-solid fa-book"></i>
+          <span>Flexbox</span>
+        </div>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#banner">Banner</a></li>
+          <li><a href="#what">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container flex-center flex-col max-content">
+        <h1>Enjoy your Stay</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+          provident qui reprehenderit ad voluptate, fuga distinctio. Fugiat
+          magnam beatae aliquam!
+        </p>
+        <button class="btn-primary">Book Now!</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner-img">
+          <img src="./assets/img/banner.jpg" alt="Hotel Banner" />
+        </div>
+        <div class="banner-content flex-center flex-col">
+          <h3><span>The History</span> Of Our Hotel</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            reprehenderit corporis at fugiat distinctio deserunt, quibusdam
+            delectus, architecto deleniti mollitia ipsum culpa ipsam magni
+            praesentium iure temporibus dignissimos, optio quas.
+          </p>
+          <button class="btn-primary">Reserve Now!</button>
+        </div>
+      </section>
+
+      <section class="what">
+        <div class="what-box flex-center flex-col">
+          <div class="icon"><i class="fa-brands fa-phoenix-squadron"></i></div>
+          <h3>Great Location</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+            iusto.
+          </p>
+        </div>
+        <div class="what-box flex-center flex-col">
+          <div class="icon"><i class="fa-brands fa-phoenix-squadron"></i></div>
+          <h3>Great Location</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+            iusto.
+          </p>
+        </div> 
+        <div class="what-box flex-center flex-col">
+          <div class="icon"><i class="fa-brands fa-fort-awesome"></i></i></div>
+          <h3>Great Location</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+            iusto.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Flexbox Project &copy; 2025, All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
