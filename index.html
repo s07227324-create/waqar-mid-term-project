@@ -3,86 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Flexbox guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shale Pizzaass</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container flex-between">
-        <div class="logo">
-          <i class="fa-solid fa-book"></i>
-          <span>Flexbox</span>
-        </div>
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#banner">Banner</a></li>
-          <li><a href="#what">About</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="header">
-      <div class="container flex-center flex-col max-content">
-        <h1>Enjoy your Stay</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
-          provident qui reprehenderit ad voluptate, fuga distinctio. Fugiat
-          magnam beatae aliquam!
-        </p>
-        <button class="btn-primary">Book Now!</button>
-      </div>
+<body>
+
+    <!-- HEADER -->
+    <header class="top">
+        <h1>SHALE PIZZAASS</h1>
+
+        <div class="logo">
+            <span>shale</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png">
+            <span>Pizza</span>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="search">
+            <button>Sign Up</button>
+        </div>
     </header>
 
-    <main>
-      <section class="banner">
-        <div class="banner-img">
-          <img src="./assets/img/banner.jpg" alt="Hotel Banner" />
-        </div>
-        <div class="banner-content flex-center flex-col">
-          <h3><span>The History</span> Of Our Hotel</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            reprehenderit corporis at fugiat distinctio deserunt, quibusdam
-            delectus, architecto deleniti mollitia ipsum culpa ipsam magni
-            praesentium iure temporibus dignissimos, optio quas.
-          </p>
-          <button class="btn-primary">Reserve Now!</button>
-        </div>
-      </section>
+    <!-- BAR -->
+    <div class="bar">
+        <div>📞 123-456-789-10</div>
+        <div class="menu">☰</div>
+        <div class="cart">🛒 <span>0</span></div>
+    </div>
 
-      <section class="what">
-        <div class="what-box flex-center flex-col">
-          <div class="icon"><i class="fa-brands fa-phoenix-squadron"></i></div>
-          <h3>Great Location</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
-            iusto.
-          </p>
-        </div>
-        <div class="what-box flex-center flex-col">
-          <div class="icon"><i class="fa-brands fa-phoenix-squadron"></i></div>
-          <h3>Great Location</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
-            iusto.
-          </p>
-        </div> 
-        <div class="what-box flex-center flex-col">
-          <div class="icon"><i class="fa-brands fa-fort-awesome"></i></i></div>
-          <h3>Great Location</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
-            iusto.
-          </p>
-        </div>
-      </section>
-    </main>
+    <div class="download">⬇ Download Menu</div>
 
-    <footer class="footer">
-      <p>Flexbox Project &copy; 2025, All Rights Reserved</p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>SHALE <span>PIZZAASS</span></h2>
+            <p>
+                From crust to toppings, every bite is a flavor explosion!
+                Come and taste the difference!
+            </p>
+            <p>📞 123-456-7890</p>
+            <p>📍 1 FLOOR NEAR KABABJI KARACHI</p>
+            <a href="#">ORDER NOW</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143">
+            <div class="off">50% OFF</div>
+        </div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="category">
+        <button>Pizzas</button>
+        <button>Garlic Breads</button>
+        <button>Pizza Sandwiches</button>
+        <button>Desserts</button>
+        <button>Beverages</button>
+    </section>
+
+    <!-- SEARCH -->
+    <div class="bottom-search">
+        <input type="text" placeholder="Flavors Available">
+        <button>🔍</button>
+    </div>
+    <section class="heading">
+        <div class="container-img">
+            <img src="assets/images/Pizza 1.jpg" alt="Pizza">
+            <h3>Olive Pizza</h3>
+            <p>An olive pizza is a savory and flavorful pizza that features olives as a primary topping, delivering a
+                briny, salty, and tangy taste in every bite. It offers a taste of the Mediterranean and can be prepared
+                in many different styles, often enhanced by complementary ingredients like cheese, onions, and herbs.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="assets/images/Pizza 3.jpg" alt="Pizza">
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="heading">
+            <h3>Contact Us</h3>
+            <p>Please use the form below to contact us</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="phone number">Phone Number</label>
+                <input type="number" id="phone number" placeholder="Phone number" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter Message" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <p>&copy; Since 1998 to 2025. Registered in 2000.</p>
+        </div>
     </footer>
-  </body>
+
+</body>
+
 </html>
